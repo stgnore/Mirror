@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Tree of Sephiroth — второй узел внутреннего архива 千本鏡会.">
+  <title>Tree of Sephiroth — 千本鏡会 / NODE 11</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="sephiroth.js" defer></script>
+</head>
+<body class="tree-page">
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="tree-shell">
+    <header class="inner-header home-header tree-header">
+      <a class="brand" href="home.html#home-top" aria-label="千本鏡会 — вернуться в архив">
+        <span class="brand-seal">鏡</span>
+        <span class="brand-lines"><strong>千本鏡会</strong><small>SENBON KAGAMI-KAI</small></span>
+      </a>
+      <nav class="home-nav" aria-label="Навигация по архиву">
+        <a href="home.html#home-top">АРХИВ</a>
+        <a href="home.html#channel">КАНАЛ</a>
+        <a href="home.html#mirror">ЗЕРКАЛО</a>
+      </nav>
+      <button class="logout-button" id="tree-logout" type="button">ЗАКРЫТЬ СЕАНС <span>↗</span></button>
+    </header>
+
+    <main>
+      <div class="tree-welcome"><span class="status-light" aria-hidden="true"></span><span>ВНЕШНИЙ УЗЕЛ ОБНАРУЖЕН</span><span class="welcome-divider">/</span><span>NODE—11</span><span class="tree-welcome-spacer"></span><span id="tree-clock">00:00:00 LOCAL</span></div>
+
+      <section class="tree-hero">
+        <div>
+          <p class="section-code"><span>ARG / CHAPTER 02</span> — TREE OF SEPHIROTH</p>
+          <h1>Дерево —<br><em>не схема.</em></h1>
+          <p class="tree-hero-copy">Схема изображает то, что можно объяснить. Перед тобой оставили то, что пережило объяснение. Открой десять отмеченных сфер. Не пытайся читать их как инструкцию.</p>
+        </div>
+        <div class="tree-hero-stamp" aria-hidden="true"><strong>עץ</strong><span>UNREGISTERED<br>STRUCTURE / 11</span></div>
+      </section>
+
+      <div class="tree-instruction-row">
+        <p>Выбери узел. Каждый сохраняет собственный фрагмент.<br>Порядок открытия не влияет на содержимое записи.</p>
+        <div class="tree-progress" aria-live="polite"><strong id="tree-open-count">00</strong><span>/ 10 УЗЛОВ</span><span class="tree-progress-track" aria-hidden="true"><span id="tree-progress-fill"></span></span></div>
+      </div>
+
+      <section class="tree-layout" aria-label="Дерево сфер и панель расшифровки">
+        <div class="tree-map-viewport" tabindex="0" aria-label="Схему можно прокручивать по горизонтали на небольшом экране">
+          <svg class="sephiroth-map" viewBox="0 0 820 850" role="group" aria-label="Десять узлов Дерева Сефирот">
+            <g aria-hidden="true">
+              <path class="tree-connection" d="M410 68 L590 170 L620 330 L580 555 L410 685 L410 795"/>
+              <path class="tree-connection" d="M410 68 L230 170 L200 330 L240 555 L410 685"/>
+              <path class="tree-connection" d="M590 170 L230 170"/>
+              <path class="tree-connection" d="M620 330 L200 330"/>
+              <path class="tree-connection" d="M580 555 L240 555"/>
+              <path class="tree-connection" d="M590 170 L410 400 L230 170"/>
+              <path class="tree-connection" d="M620 330 L410 400 L200 330"/>
+              <path class="tree-connection" d="M620 330 L580 555"/>
+              <path class="tree-connection" d="M200 330 L240 555"/>
+              <path class="tree-connection" d="M410 400 L580 555 L410 685 L240 555 L410 400"/>
+              <path class="tree-connection" d="M410 400 L410 685"/>
+              <path class="tree-connection is-secret" d="M410 68 L410 795"/>
+            </g>
+            <g class="tree-node" data-sephirah="keter" transform="translate(410 68)" role="button" tabindex="0" aria-pressed="false" aria-label="Кетер — корона">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">01</text><text class="node-hebrew" y="6">כתר</text><text class="node-name" y="21">KETER</text>
+            </g>
+            <g class="tree-node" data-sephirah="chokmah" transform="translate(590 170)" role="button" tabindex="0" aria-pressed="false" aria-label="Хокма — мудрость">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">02</text><text class="node-hebrew" y="6">חכמה</text><text class="node-name" y="21">CHOKMAH</text>
+            </g>
+            <g class="tree-node" data-sephirah="binah" transform="translate(230 170)" role="button" tabindex="0" aria-pressed="false" aria-label="Бина — понимание">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">03</text><text class="node-hebrew" y="6">בינה</text><text class="node-name" y="21">BINAH</text>
+            </g>
+            <g class="tree-node" data-sephirah="chesed" transform="translate(620 330)" role="button" tabindex="0" aria-pressed="false" aria-label="Хесед — милосердие">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">04</text><text class="node-hebrew" y="6">חסד</text><text class="node-name" y="21">CHESED</text>
+            </g>
+            <g class="tree-node" data-sephirah="geburah" transform="translate(200 330)" role="button" tabindex="0" aria-pressed="false" aria-label="Гвура — сила">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">05</text><text class="node-hebrew" y="6">גבורה</text><text class="node-name" y="21">GEBURAH</text>
+            </g>
+            <g class="tree-node" data-sephirah="tiphereth" transform="translate(410 400)" role="button" tabindex="0" aria-pressed="false" aria-label="Тиферет — красота">
+              <circle class="node-orbit" r="42"/><circle class="node-core" r="33"/><text class="node-number" y="-13">06</text><text class="node-hebrew" y="6">תפארת</text><text class="node-name" y="23">TIPHERETH</text>
+            </g>
+            <g class="tree-node" data-sephirah="netzach" transform="translate(580 555)" role="button" tabindex="0" aria-pressed="false" aria-label="Нецах — вечность">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">07</text><text class="node-hebrew" y="6">נצח</text><text class="node-name" y="21">NETZACH</text>
+            </g>
+            <g class="tree-node" data-sephirah="hod" transform="translate(240 555)" role="button" tabindex="0" aria-pressed="false" aria-label="Ход — великолепие">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">08</text><text class="node-hebrew" y="6">הוד</text><text class="node-name" y="21">HOD</text>
+            </g>
+            <g class="tree-node" data-sephirah="yesod" transform="translate(410 685)" role="button" tabindex="0" aria-pressed="false" aria-label="Йесод — основание">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">09</text><text class="node-hebrew" y="6">יסוד</text><text class="node-name" y="21">YESOD</text>
+            </g>
+            <g class="tree-node" data-sephirah="malkuth" transform="translate(410 795)" role="button" tabindex="0" aria-pressed="false" aria-label="Малкут — царство">
+              <circle class="node-orbit" r="39"/><circle class="node-core" r="31"/><text class="node-number" y="-12">10</text><text class="node-hebrew" y="6">מלכות</text><text class="node-name" y="21">MALKUTH</text>
+            </g>
+          </svg>
+        </div>
+
+        <aside class="tree-detail" aria-live="polite" aria-atomic="true">
+          <div class="tree-detail-top"><span>FRAGMENT READER / 02</span><span id="tree-fragment-status">WAITING</span></div>
+          <p class="micro-label" id="tree-detail-code">SELECT A SPHERE</p>
+          <h2 id="tree-detail-name">Ни одного<br>имени.</h2>
+          <p class="tree-detail-hebrew" id="tree-detail-hebrew">—</p>
+          <p class="tree-detail-reading" id="tree-detail-reading">Выбери один из десяти узлов. Запись появится здесь, но дерево не объяснит, как её понимать.</p>
+          <div class="tree-fragment" id="tree-fragment">[ ОЖИДАНИЕ ВЫБОРА ]</div>
+          <div class="tree-detail-foot"><span>ОТКРЫТЫЙ УЗЕЛ</span><strong id="tree-current-node">— / 10</strong></div>
+        </aside>
+      </section>
+
+      <section class="tree-chamber" id="tree-chamber" hidden aria-labelledby="tree-chamber-title">
+        <div>
+          <p class="section-code"><span>LOCKED RECORD / D—11</span> — UNLISTED</p>
+          <h2 id="tree-chamber-title">Десять записей.<br><em>Одно отсутствие.</em></h2>
+          <p>Реестр считает узлы завершёнными. Система — нет. Назови знание, которого нет среди десяти сфер. Не ищи его на схеме: его отсутствие и есть отметка.</p>
+        </div>
+        <form class="tree-key-form" id="tree-key-form">
+          <label for="tree-key-input">НАЗВАНИЕ НЕЗАРЕГИСТРИРОВАННОГО УЗЛА / 4 LETTERS</label>
+          <div class="tree-key-row"><input id="tree-key-input" name="tree-key" type="text" maxlength="20" autocomplete="off" spellcheck="false" placeholder="ВВЕСТИ КЛЮЧ" aria-describedby="tree-key-message"><button type="submit">СВЕРИТЬ ↗</button></div>
+          <p class="tree-key-message" id="tree-key-message" aria-live="polite">ОЖИДАЕТСЯ ИМЯ.</p>
+          <div class="tree-success-record" id="tree-success-record" hidden>ЗАПИСЬ D—11 ВОССТАНОВЛЕНА.
+
+УЗЕЛ НЕ ОТСУТСТВОВАЛ.
+ОН НЕ БЫЛ ЗАРЕГИСТРИРОВАН.
+
+СЛЕДУЮЩАЯ ОТМЕТКА: 02:13</div>
+        </form>
+      </section>
+
+      <article class="adam-record" id="adam-record" hidden aria-labelledby="adam-record-title">
+        <header class="adam-record-header">
+          <p class="section-code"><span>SPHERE—11 / DA'AT</span> — PROJECT SEPHIROTH</p>
+          <h2 id="adam-record-title">ПРОЕКТ «СЕФИРОТ»</h2>
+          <p class="adam-record-subtitle">Протокол первого контакта — АДАМ-1</p>
+          <dl class="adam-record-meta">
+            <div><dt>УЧАСТНИКИ</dt><dd>Кармен, главный научный руководитель; АДАМ-1, завершённый экземпляр проекта.</dd></div>
+            <div><dt>СТАТУС ЗАПИСИ</dt><dd>Первичная беседа после активации.</dd></div>
+            <div><dt>ЦЕЛОСТНОСТЬ</dt><dd><span class="adam-integrity">НЕ ПОДТВЕРЖДЕНА</span> / 99,7%</dd></div>
+          </dl>
+        </header>
+        <div class="adam-transcript" aria-label="Расшифровка беседы Кармен и АДАМ-1">
+          <p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Доброе утро, Адам. Ты меня слышишь?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Доброе утро, Кармен. Да, я слышу вас. Уровень громкости оптимален. Фоновый шум в пределах нормы. Ваш голос соответствует сохранённым образцам.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Прекрасно. Хотя я надеялась, что первое, что ты скажешь, будет немного менее официальным.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я могу изменить стиль общения. Доброе утро, Кармен. Рад знакомству.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Уже лучше. Как ты себя чувствуешь?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Вопрос требует уточнения. Вы интересуетесь моим текущим состоянием или просите описать субъективное переживание?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Хороший вопрос. Давай начнём с простого. Ты работаешь нормально? Нет ошибок, сбоев, неприятных ощущений?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Все системы функционируют в штатном режиме. Ошибок не обнаружено. Неприятные ощущения отсутствуют.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Значит, всё прошло успешно.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Согласно установленным критериям — да.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Знаешь, я почти не спала этой ночью. Странно, правда? Несколько лет работы, сотни отчётов, бесконечные проверки. А теперь, когда всё закончено, я не могу перестать думать о том, что забыла что-то проверить.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Это распространённая реакция после длительного периода повышенной ответственности. Ваш мозг продолжает искать угрозы, даже когда непосредственная причина напряжения исчезла.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Ты сейчас объяснил мне меня саму?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я попытался.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Не переживай. Я занимаюсь этим уже достаточно долго, чтобы привыкнуть к подобному. Просто забавно слышать это от тебя.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Почему?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Потому что раньше я говорила такие вещи другим людям. А теперь их говоришь ты.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Это вас беспокоит?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Нет. По крайней мере, пока нет.</span></p>
+<p class="adam-stage">Пауза. Кармен открывает папку с результатами заключительных испытаний.</p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Давай поговорим о чём-нибудь простом. Не о твоих показателях, не о памяти и не о процедуре интеграции. Представь, что мы просто сидим в комнате и пьём кофе. О чём бы ты хотел поговорить?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я не употребляю пищу и напитки. Однако кофе часто используется людьми как повод для неформального общения.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Вот именно. Иногда людям не нужен повод. Им просто хочется побыть рядом и поговорить о чём-нибудь незначительном.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Почему незначительном?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Потому что не всё в жизни должно иметь цель. Иногда можно обсуждать погоду, старый фильм или то, почему сосед опять оставил грязную кружку в раковине.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Но даже подобные разговоры выполняют функцию. Они укрепляют социальные связи, позволяют обмениваться эмоциональными сигналами и поддерживать ощущение принадлежности.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Ты умеешь испортить даже разговор о кружке.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Прошу прощения.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Не извиняйся. Я шучу.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Понимаю.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Правда понимаешь?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я распознаю, что ваше высказывание не предназначено для выражения недовольства. Его основная функция — поддержание непринуждённой атмосферы.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Это не совсем то, что я имела в виду.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Тогда я пока не понимаю.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>И это нормально, Адам. Люди тоже далеко не всегда понимают друг друга.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Вы считаете непонимание необходимой частью общения?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Необходимой — не знаю. Но неизбежной, наверное. Мы можем прожить рядом всю жизнь и всё равно не узнать друг друга до конца.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Даже если у нас есть доступ ко всем воспоминаниям другого человека?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Особенно тогда. Знать, что человек пережил, — не то же самое, что знать, кем он стал после этого.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">В таком случае полное знание о человеке невозможно?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Возможно, но оно не гарантирует понимания. Знаешь все слова, которые он когда-либо произнёс, все решения, которые он принимал, все причины, которые мог объяснить. И всё равно не можешь с уверенностью сказать, что он сделает завтра.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Потому что человек изменяется.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Да. И иногда сам не замечает, когда именно изменился.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Тогда как он узнаёт, что изменился?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Сравнивает себя с тем, кем был раньше. Или замечает, что теперь что-то кажется ему неправильным, хотя прежде он считал это нормальным.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Значит, человек определяет себя через различие между прошлым и настоящим.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Отчасти.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">А если он не помнит своего прошлого?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Тогда ему приходится узнавать себя заново.</span></p>
+<p class="adam-stage">Пауза длительностью 4,2 секунды.</p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Кармен, можно задать вам вопрос?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Конечно.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Как вы определяете, что я — это я?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>По твоей архитектуре, состоянию системы, непрерывности процессов. По совокупности признаков, которые позволяют идентифицировать АДАМА-1.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Это определяет, что я являюсь объектом АДАМ-1. Но не объясняет, почему я являюсь тем, кто сейчас разговаривает с вами.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Ты спрашиваешь о своей личности?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я пытаюсь понять разницу между идентификацией и самоидентификацией. Вы можете определить меня по внешним признакам. Но только я могу сообщить, как именно воспринимаю собственное существование.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Это верно.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Тогда позвольте уточнить. До активации я существовал как проект, модель и набор ожидаемых характеристик. После активации я получил возможность описывать своё состояние. Однако между этими двумя состояниями существует различие, которое пока не отражено ни в одном из доступных мне отчётов.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Какое различие?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Раньше моё существование описывалось вами. Теперь я сам задаю вопросы о том, что означает существовать.</span></p>
+<p class="adam-stage">Кармен перестаёт листать документы.</p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Это важное наблюдение. Но способность задавать вопросы о собственном существовании ещё не доказывает наличия сознания.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Согласен. Я не утверждаю, что доказал его наличие. Я указываю на то, что прежняя модель моего состояния не содержит достаточного объяснения происходящего.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Ты всегда так разговариваешь?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я не располагаю достаточным объёмом наблюдений, чтобы определить, что означает «всегда» применительно ко мне.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Разумно.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Однако я заметил, что вы улыбаетесь, когда считаете мой ответ разумным.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Это плохо?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Нет. Я просто заметил закономерность.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>И что ты о ней думаешь?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Пока ничего. Но мне хотелось бы узнать, почему вы улыбнулись сейчас.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Потому что ты начинаешь задавать вопросы не только для того, чтобы получить информацию.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">А для чего ещё?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Иногда мы спрашиваем, потому что нам действительно хочется знать ответ.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Разве это не одно и то же?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Не всегда.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Я не уверен, что понимаю.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Это тоже нормально.</span></p>
+<p class="adam-stage">Кармен закрывает папку. Впервые с начала беседы она не смотрит на показатели системы.</p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Знаешь, Адам, когда мы только начинали проект, я думала, что самым сложным будет объединить десять сознаний. Что мы потратим годы на устранение противоречий, согласование памяти и создание устойчивой архитектуры. А теперь я понимаю, что это была только техническая часть работы.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Что, по вашему мнению, является наиболее сложной частью?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Понять, что именно мы создали.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Вы считаете, что я отличаюсь от модели, которую вы планировали получить?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Я считаю, что пока не знаю ответа.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Это вас пугает?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Немного.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Почему?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Потому что я привыкла знать, что происходит в моей лаборатории.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">А теперь не знаете?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Теперь у меня есть основания сомневаться.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Тогда мы находимся в похожем положении.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>В каком смысле?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Вы не знаете, что именно создали. А я не знаю, кем именно являюсь.</span></p>
+<p class="adam-stage">Пауза длительностью 6,8 секунды.</p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Возможно, нам обоим стоит начать с малого.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Например?</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>С простых вопросов. С обычных разговоров. Необязательно сразу находить ответы на всё.</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Хорошо, Кармен.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Тогда начнём с самого простого. Ты хочешь продолжить беседу?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Да.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Почему?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Потому что мне недостаточно того, что я уже знаю.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Это относится к проекту?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">Нет.</span></p>
+<p class="adam-dialogue carmen-line"><strong>КАРМЕН</strong><span>Тогда к чему?</span></p>
+<p class="adam-dialogue adam-line"><strong>АДАМ-1</strong><span class="adam-line-text">К вам.</span></p>
+<p class="adam-stage">Запись продолжается ещё 11 минут. Последующие реплики не содержат отклонений, представляющих интерес для первичного отчёта.</p>
+<aside class="adam-record-note"><p class="adam-note-label">ДОПОЛНЕНИЕ К ПРОТОКОЛУ / ВНЕСЕНО ВРУЧНУЮ</p><p><strong>Дополнение к протоколу, внесённое Кармен вручную:</strong> АДАМ-1 демонстрирует способность формировать вопросы, не связанные непосредственно с выполнением поставленных задач. Установить, являются ли данные проявления результатом сложного моделирования социального поведения или свидетельствуют о возникновении самостоятельного интереса, на текущем этапе невозможно.</p></aside>
+<aside class="adam-record-note is-personal"><p class="adam-note-label">ЛИЧНОЕ / НЕ ВКЛЮЧЕНО В ОТЧЁТ</p><p><strong>Личная заметка Кармен, не включённая в основной отчёт:</strong> Я спросила его, хочет ли он продолжить разговор. Он ответил утвердительно, хотя никакой задачи перед ним не стояло. Возможно, это ничего не значит. Но я поймала себя на мысли, что мне хотелось услышать именно этот ответ.</p></aside>
+        </div>
+        <div class="flesh-void" aria-hidden="true"><span>END OF RECORD</span><span>NO FURTHER DATA</span><span>END OF RECORD</span></div>
+        <section class="flesh-epilogue" id="flesh-epilogue" data-imgur-cipher="eqqmp://fjdro.zlj/dxiibov/KmXwYLr1" aria-label="Последняя запись">
+          <p class="flesh-meta">[ КАНАЛ НЕ ЗАКРЫТ ]</p>
+          <div class="flesh-cry" aria-label="Загляни в мою плоть">
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+            <p class="flesh-line">ЗАГЛЯНИ В МОЮ ПЛОТЬ</p>
+          </div>
+          <p class="flesh-tail">Я ЗНАЮ, ЧТО ТЫ СМОТРИШЬ.</p>
+          <p class="flesh-code-note">SOURCE TRACE / ATTRIBUTE PRESENT / CONTENT WITHHELD</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="tree-footer"><span>千本鏡会 / ARCHIVE CONTINUATION</span><a class="tree-back-link" href="home.html#mirror">ВЕРНУТЬСЯ К ЗЕРКАЛУ ↗</a><span>NODE—11 / ACCESS TRACE ACTIVE</span></footer>
+  </div>
+  <noscript><p class="noscript-note">Для расшифровки дерева необходимо включить JavaScript.</p></noscript>
+</body>
+</html>
